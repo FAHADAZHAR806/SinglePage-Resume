@@ -7,9 +7,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full bg-amber-400 shadow">
-      <div className="flex justify-between items-center px-4 py-3 max-w-[1600px] m-auto">
-        <h1 className="font-bold text-xl">Fahad Azhar</h1>
+    <div className="w-full">
+      <div className="flex justify-between  px-4 py-3 max-w-[1100px] m-auto">
+        <h1 className="font-bold text-2xl">Fahad Azhar</h1>
 
         {/* Hamburger icon */}
         <div className="md:hidden">
@@ -19,7 +19,7 @@ const Navbar = () => {
         </div>
 
         {/* Menu */}
-        <ul className="hidden md:flex gap-6">
+        <ul className="hidden md:flex gap-6 text-xl font-semibold">
           <li>
             <Link href="/">Home</Link>
           </li>
