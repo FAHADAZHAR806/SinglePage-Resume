@@ -24,31 +24,31 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="">About</Link>
           </li>
           <li>
-            <Link href="/articles">Articles</Link>
+            <Link href="">Articles</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="">Contact</Link>
           </li>
         </ul>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <ul className="md:hidden px-4 pb-4 flex flex-col gap-3 bg-amber-300">
+        <ul className="md:hidden px-4 pb-4 flex flex-col gap-3 ">
           <li>
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/">About</Link>
           </li>
           <li>
-            <Link href="/articles">Articles</Link>
+            <Link href="/">Articles</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/">Contact</Link>
           </li>
         </ul>
       )}

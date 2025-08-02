@@ -4,40 +4,43 @@ import Image from "next/image";
 export default function Review() {
   const Review = [
     {
-      feedback: "Fahad was a brilliant student",
-      name: "Muhammad Ali",
-      pic: "/PIC.jpeg",
+      feedback:
+        "Fahad was amazing to work with! He delivered a clean, responsive website exactly as I envisioned. His attention to detail and ability to turn my ideas into reality was impressive. Will definitely hire him again!",
+      name: " — Emma T., Small Business Owner",
+      pic: "/katia.jpg",
     },
     {
-      feedback: "Fahad is such a nice guys always eager to learn with him",
-      name: "Saad Ahmed",
-      pic: "/PIC.jpeg",
+      feedback:
+        "Incredible developer. He not only completed the frontend tasks ahead of time but also suggested great improvements that made the user experience smoother. Communicative, efficient, and highly skilled",
+      name: "— Carlos M., Startup Co-founder",
+      pic: "/nordic_ceo.png",
     },
     {
-      feedback: "Fahad is such a nic man",
-      name: "Sarmad Khalid",
-      pic: "/PIC.jpeg",
+      feedback:
+        "One of the best freelancers. The site worked flawlessly, and the code was very well organized. What stood out was his dedication and willingness to go the extra mile to ensure everything worked perfectly",
+      name: "— Lena K., Project Manager",
+      pic: "/norwegianam.webp",
     },
   ];
   return (
     <>
-      <h1 className="text-center p-3 ">Review from Peoples</h1>
+      <h1 className="text-center p-6 font-bold ">Feedback from Clients</h1>
 
       <div className="flex items-center justify-center gap-4  flex-wrap pb-10">
         {Review.map((items, index) => (
           <div
             key={index}
-            className="w-60 h-40 flex flex-col justify-center items-center border-2 border-black rounded-4xl bg-amber-500 p-4 text-center"
+            className="w-60 h-80 flex flex-col justify-center items-center border-2 border-black rounded-4xl bg-amber-500 p-4 text-center"
           >
             <p className="text-sm mb-2">{items.feedback}</p>
             <h1 className="text-lg font-semibold mb-3">{items.name}</h1>
             <div className="flex items-center justify-center w-10 h-10 bg-yellow-500 rounded-full text-black font-bold">
               <Image
-                className="rounded-full"
+                className="rounded-full object-contain "
                 src={items.pic}
-                width={40}
+                width={20}
                 height={20}
-                alt="user"
+                alt="client.png"
               />
             </div>
           </div>
