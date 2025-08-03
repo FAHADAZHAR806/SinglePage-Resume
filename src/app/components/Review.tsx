@@ -7,7 +7,7 @@ export default function Review() {
       feedback:
         "Fahad was amazing to work with! He delivered a clean, responsive website exactly as I envisioned. His attention to detail and ability to turn my ideas into reality was impressive. Will definitely hire him again!",
       name: " — Emma T., Small Business Owner",
-      pic: "/katia.jpg",
+      pic: "/nordic_ceo.png",
     },
     {
       feedback:
@@ -19,7 +19,7 @@ export default function Review() {
       feedback:
         "One of the best freelancers. The site worked flawlessly, and the code was very well organized. What stood out was his dedication and willingness to go the extra mile to ensure everything worked perfectly",
       name: "— Lena K., Project Manager",
-      pic: "/norwegianam.webp",
+      pic: "/nordic_ceo.png",
     },
   ];
   return (
@@ -34,13 +34,13 @@ export default function Review() {
           >
             <p className="text-sm mb-2">{items.feedback}</p>
             <h1 className="text-lg font-semibold mb-3">{items.name}</h1>
-            <div className="flex items-center justify-center w-10 h-10 bg-yellow-500 rounded-full text-black font-bold">
+            <div className="flex items-center justify-center w-10 h-10  bg-yellow-500 rounded-full text-black font-bold">
               <Image
-                className="rounded-full object-contain "
+                className="rounded-full "
                 src={items.pic}
-                width={20}
-                height={20}
                 alt="client.png"
+                width={40}
+                height={30}
               />
             </div>
           </div>
